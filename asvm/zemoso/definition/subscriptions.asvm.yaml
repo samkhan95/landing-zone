@@ -1,0 +1,26 @@
+asvm_subscriptions:
+  gitops:
+    caf_landingzone_branch: int.5.6.0
+
+  relative_destination_folder: level3/zemoso/subscriptions
+
+  deployments:
+    landingzone:
+      global_settings_key:
+        platform:
+          asvm:
+      remote_tfstates:
+        platform:
+          asvm:
+
+  resources:
+    asvm_subscriptions:
+      subscriptions:
+        zemoso_dev:
+          name: zemoso-dev
+          create_alias: False
+          subscription_id: 4fdcbcc0-8588-4f38-847f-39ce9469e3b0
+        zemoso_prod:
+          name: zemoso-prod
+          create_alias: False
+          subscription_id: 4fdcbcc0-8588-4f38-847f-39ce9469e3b0

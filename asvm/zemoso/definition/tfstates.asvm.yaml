@@ -1,0 +1,23 @@
+
+tfstates:
+  asvm:
+    asvm_subscriptions:
+      lz_key_name: zemoso_subscriptions
+      tfstate: zemoso_subscriptions.tfstate
+      workspace: tfstate
+      level: level3
+      sub_template_folder: platform/level3/subscriptions
+      yaml: platform/level3/ansible.yaml
+
+    zemoso_dev:
+      lz_key_name: zemoso_dev_level3
+      tfstate: zemoso_dev_level3.tfstate
+      workspace: zemoso-dev
+      level: level3
+
+    zemoso_prod:
+      lz_key_name: zemoso_prod_level3
+      tfstate: zemoso_prod_level3.tfstate
+      workspace: zemoso-prod
+      level: level3
+
